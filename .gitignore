@@ -1,0 +1,8 @@
+.env
+.venv/
+.idea/
+
+src/data/
+src/models/
+src/results/
+src/.ipynb_checkpoints/
