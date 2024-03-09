@@ -106,20 +106,17 @@ La variable cible/target est parfaitement équilibrée avec 800 000 tweets posit
 
 Sur l'ensemble des tweets on obtient le nuage suivant :
 
- ![Nuage de mots du corpus](/WordCloud.png "Tweet positifs").
-
+ ![Nuage de mots du corpus](img/WordCloud.png "Tweet positifs").
 
 Pour les tweets négatifs on obtient le nuage suivant :
 
- ![Nuage de mots négatifs du corpus](/WordCloudNeg.png "Tweet négatifs").
+ ![Nuage de mots négatifs du corpus](img/WordCloudNeg.png "Tweet négatifs").
 
 Pour les tweets positifs on obtient le nuage suivant :
 
- ![Nuage de mots positifs du corpus](/WordCloudPos.png "Tweet positifs").
-
+ ![Nuage de mots positifs du corpus](img/WordCloudPos.png "Tweet positifs").
 
 # 3. Preproccessing
-
 
 ## 3.1. Substitutions
 
@@ -198,7 +195,7 @@ Les performances sont donc
 * ROC AUC : 88,38%
 * Temps d’entrainement : 30 secondes
 
-![Matrice de confusion modèle simple](modele_simple_cm.png) ![Courbe ROC modèle simple](modele_simple_roc.png)
+![Matrice de confusion modèle simple](img/modele_simple_cm.png) ![Courbe ROC modèle simple](img/modele_simple_roc.png)
 
 ## 4.2. Modèle avancé
 
@@ -211,9 +208,9 @@ Plusieurs plongement de mots/embedding sont possibles, nous évaluerons les embe
 
 Pour chaque embedding, on pourra tester deux méthodes, avec ou sans LSTM avec les structures suivantes :
 
-![Description du modèle avancé](modele_avance.png)
+![Description du modèle avancé](img/modele_avance.png)
 
-![Description du modèle avancé avec LSTM](modele_avance_lstm.png)
+![Description du modèle avancé avec LSTM](img/modele_avance_lstm.png)
 
 ### 4.2.2. Performances des modèles
 
@@ -251,21 +248,21 @@ On part du principe que le temps d'entrainement n'est pas un problème  et on re
 * un plongement de mots Glove
 * Avec LSTM
 
-![Matrice de confusion modèle avancé](modele_avance_cm.png)
+![Matrice de confusion modèle avancé](img/modele_avance_cm.png)
 
-![Courbe ROC modèle avancé](modele_avance_roc.png)
+![Courbe ROC modèle avancé](img/modele_avance_roc.png)
 
 
 ## 4.3. Modèle BERT
 
 ### 4.3.1. Présentation
 
-![Illustration BERT](bert_pres.png)
+![Illustration BERT](img/bert_pres.png)
 
 Le modèle BERT pour Bidirectional Encoder Representations from Transformers est un modèle de représentation de textes écrit.
 Par rapport aux plongement de mot classqiue, il a la particularité d’être contextuel. 
 
-![BERT](bert_summary.png)
+![BERT](img/bert_summary.png)
 
 On utilise une version pré-entraînée de BERT qui est adéquate pour l'analyse de sentiment : bert-base-uncased.
 On effectue un fine-tuning de ce modèle.
